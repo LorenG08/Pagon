@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Anton:400');   
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple:400');
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe:400');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #efefbb;
+    background: linear-gradient(to right, #39373a, #e4e3e1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.image-item {
+    background-color: #0e0c0d;
+    border-radius: 100px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 30px;
+}
+.image-item img {
+    background-color: rgba(235, 247, 73, 0.801);
+    box-shadow: 0 3px 15px rgba(100, 60, 230, 0.6);
+    border: rgb(71, 213, 248) gray;
+    border-width: 5px;
+    border-style: ridge;
+    border-radius: 20%;
+    width: 250px;
+    height: 250px;
+}
+.header{
+    width: max-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header h1 {
+    font-family: 'sans-serif', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(255, 65, 65);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px rgb(255, 44, 44) solid;
+    background-color: rgb(3, 3, 3);
+}
+.definition-text-item{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+.definition-text-item p{
+    border: 2px rgb(237, 239, 240) solid;
+    border-radius: 20%;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(218, 47, 47);
+}
+.text-font{
+    font-family: 'sans-serif', sans-serif;
+}   
+p{
+    text-align: center;
+}

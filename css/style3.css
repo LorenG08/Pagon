@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Anton:400');   
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple:400');
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe:400');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #efefbb;
+    background: linear-gradient(to right, #9c46ff, #ffdb38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.image-item {
+    background-color: #ca2e77;
+    border-radius: 100px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 50px;
+}
+.image-item img {
+    background-color: rgba(235, 247, 73, 0.801);
+    box-shadow: 0 3px 15px rgba(100, 60, 230, 0.6);
+    border: rgb(71, 213, 248) gray;
+    border-width: 5px;
+    border-style: ridge;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
+.header{
+    width: max-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header h1 {
+    font-family: 'sans-serif', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(136, 85, 255);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px rgb(217, 83, 250) solid;
+    background-color: rgb(247, 242, 241);
+}
+.definition-text-item{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+.definition-text-item p{
+    border: 2px rgb(237, 239, 240) solid;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(75, 183, 255);
+}
+.text-font{
+    font-family: 'sans-serif', sans-serif;
+}   
+p{
+    text-align: center;
+}
