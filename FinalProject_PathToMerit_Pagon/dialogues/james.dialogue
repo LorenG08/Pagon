@@ -1,0 +1,25 @@
+~ start
+if not Global.donation_verifier 
+	James: The bridge is unstable right now young lad
+	James: maybe u should visit the other village
+	=> END
+
+else
+	if not Global.tree_verifier
+		James: Woahh!! stop there young lad
+		James: its still dangerous aroung the bridge
+		James: It collapsed yesterday when we were trying to fix it 
+		James: but were running out of wood 
+		James: you take my errand, fetch me some wood in mount chou for me
+		James: we are urgently in need of wood, the people across this bridge needed some donations
+		James: we're running out of time
+		James: you'll met jonh there, my old friend, he'll greet you there
+		set Global.has_met_james = true
+		if Global.done_meeting_john
+			James: did you meet john already?
+	else
+		james: thanks lad 
+		James: Im off to fix the bridge now 
+		set Global.has_help_james = true
+		
+=> END

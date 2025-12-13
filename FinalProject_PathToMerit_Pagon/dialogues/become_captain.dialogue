@@ -1,0 +1,16 @@
+~ start
+???: You have became the captain of this land
+???: all seems to be good at first
+???: but the longer you've seated in this current posistion
+???: nothing has change 
+???: you tried your best to help those in need
+???: or at least your people
+???: but at the end
+???: what you have done until now
+???: is just a bandage not a cure
+???: and long before you realize
+???: the town you swore to protect 
+???: has been destroyed
+???: ......
+set Global.done = true
+=> END

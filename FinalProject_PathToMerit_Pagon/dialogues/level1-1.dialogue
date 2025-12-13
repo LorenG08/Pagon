@@ -1,0 +1,11 @@
+~ start
+if Global.space
+	Man: go to the next level we're so tight in here
+	- go to the next level
+		Man: Goodbye 
+		set Global.next_level = true
+	- stay
+else
+	Man: give me some SPACE!!!! dude
+	Man: This place is narrow for the two of us
+=> END

@@ -1,0 +1,14 @@
+~ start
+???: What are you doing here?
+
+- Im looking for the god
+???: ohh, sorry mate I dont know anything about this area
+???: I was a one of the volunteer that was sent here
+volunteer: but unfornately we got lost 
+volunteer: this might be shameless 
+volunteer: but I assume you're from this area?
+volunteer: find my other friends scattered in this mountains 
+volunteer: and deliver the goods to the village from down below
+set Global.volunteer1 = true
+???: you recieved the goods
+=> END

@@ -1,0 +1,20 @@
+~ start
+if not Global.Farmer2_done_donate
+	Donator: hey I heard the the south village is in bad shape
+	Donator: I was hoping to donate to them 
+	Donator: But as you have guessed 
+	Donator: my situatioin wont let me
+	Donator: wont you help this trouble lamb?
+	- sure 
+		Donator: cool, Just deliver this for me 
+		???: you recieve donations 
+		set Global.Farmer2_donation = true
+		set Global.Farmer2_done_donate = true
+
+	- NO
+		% Donator: thats to bad
+
+
+else
+	Donator: Thanks for helping me
+=> END

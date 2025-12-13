@@ -1,0 +1,18 @@
+~ start
+if Global.volunteer1
+	volunteer: hmmmmm!!! hmmm!!
+	volunteer: Scrub! scrub! 
+	???: (distant noise)
+	volunteer: who"s there?????
+	???: ....
+	volunteer: I see so it was decided not to go to the village
+	volunteer: and instead intrust this to you 
+	- why are you on the lake?
+		volunteer: ehehehehe look you see nothing!!
+		volunteer: you know what? just take this and ill keep going
+		set Global.volunteer3 = true
+		???: you recieved the donations
+
+else 
+	???: Can you plss go away
+=> END

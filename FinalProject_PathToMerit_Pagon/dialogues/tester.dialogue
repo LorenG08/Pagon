@@ -1,0 +1,29 @@
+~ start
+if Global.tester_done
+	Tester: You have proven your self 
+	Tester: you may now enter!!
+	- enter 
+		set Global.end_game = true
+else
+	Tester: I see, you reached the highest place 
+	Tester: What do you desire?
+	- I want change 
+		Tester: I see what you meant there, but before I let you in
+		Tester: I needed to test you first
+		Tester: I need you to do me two things 
+		Tester: first get me a orange flower
+		Tester: and pass the riddle of ernesto the all knowing
+		Tester: if you do all of that 
+		Tester: Ill let you in => END
+
+
+	- I just want to be at the top
+		Tester: well, do me a favor 
+		Tester: first get me a orange flower
+		Tester: and pass the riddle of ernesto the all knowing => END
+
+
+	- nothing => END
+
+
+=> END

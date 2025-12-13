@@ -1,0 +1,5 @@
+~ start
+???: you have found where you came from
+???: you can now talk to ernesto!!!
+set Global.start = true
+=> END

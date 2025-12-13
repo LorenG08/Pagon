@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cilsd07wpcvk1"
+path="res://.godot/imported/Donation2.dialogue-0a427b920f1458828b65596693f39e0c.tres"
+
+[deps]
+
+source_file="res://dialogues/Donation2.dialogue"
+dest_files=["res://.godot/imported/Donation2.dialogue-0a427b920f1458828b65596693f39e0c.tres"]
+
+[params]
+
+defaults=true

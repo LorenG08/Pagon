@@ -1,0 +1,22 @@
+~ start
+if not Global.has_met_james
+	John: Hi, Im john, an aspiring merchant 
+	John: but as you can see I dont have anything I can sell to you yet
+
+else
+	if not Global.has_met_mary
+		John: So, james needed some wood 
+		John: unfortunately, some rocks blocked the path
+		John: But we're at it, we are almost finished clearing the rock
+		John: just look for an axe so you can get some woods
+		John: my daughter mary should have an axe
+		John: she is at the bay checking if the water rises again 
+		John: you should see her 
+		set Global.has_met_john = true
+	if Global.has_met_mary
+		John: you are right on time 
+		John: we are done clearing the road
+		John: you can now get woods
+		John: be careful out there young man
+		set Global.done_meeting_john = true
+=> END

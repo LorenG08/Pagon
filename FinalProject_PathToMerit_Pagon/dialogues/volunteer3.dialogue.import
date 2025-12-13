@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://hntorpl4ihye"
+path="res://.godot/imported/volunteer3.dialogue-e8fca4e74024f30e22fe2edaf33ede67.tres"
+
+[deps]
+
+source_file="res://dialogues/volunteer3.dialogue"
+dest_files=["res://.godot/imported/volunteer3.dialogue-e8fca4e74024f30e22fe2edaf33ede67.tres"]
+
+[params]
+
+defaults=true

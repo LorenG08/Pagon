@@ -1,0 +1,7 @@
+~ start
+if Global.came_from
+	Ernesto: You have passed my riddle 
+else
+	Ernesto: Where do you came from?
+	set Global.start = true
+=> END

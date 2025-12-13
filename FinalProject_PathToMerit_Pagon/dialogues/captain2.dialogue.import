@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cd2h5sbi1ekm5"
+path="res://.godot/imported/captain2.dialogue-58d6599db1d40073908fc15542b8ff6b.tres"
+
+[deps]
+
+source_file="res://dialogues/captain2.dialogue"
+dest_files=["res://.godot/imported/captain2.dialogue-58d6599db1d40073908fc15542b8ff6b.tres"]
+
+[params]
+
+defaults=true

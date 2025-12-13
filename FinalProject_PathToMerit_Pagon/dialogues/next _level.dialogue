@@ -1,0 +1,6 @@
+~ start
+???: sure you want to go to the next level?
+- yes
+	set Global.next_level = true
+- no
+=> END

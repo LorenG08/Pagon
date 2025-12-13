@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://napqhmjt8gw2"
+path="res://.godot/imported/lower_righ.dialogue-e54b780889173fee4aaffb7ce792122c.tres"
+
+[deps]
+
+source_file="res://dialogues/lower_righ.dialogue"
+dest_files=["res://.godot/imported/lower_righ.dialogue-e54b780889173fee4aaffb7ce792122c.tres"]
+
+[params]
+
+defaults=true

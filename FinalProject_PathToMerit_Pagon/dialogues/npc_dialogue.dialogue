@@ -1,0 +1,17 @@
+~ Welcoming
+Resident: HI!! welcome to our town
+Resident: though its a little bit in shambles due to series of storms
+Resident: The people running these land aint much of a help
+Resident: but alas feel free to roam around
+- Can I be of help?
+	Resident: We are fine in these parts 
+	Resident: but Im afraid the village in the south took a huge damge in their town
+	Resident: perhaps if you talk the residents in this village 
+	Resident: someone might be willing to help 
+	- Ok thanks => END
+
+- thank you
+	no worries in this type situation we have nothing but our trust to others => END
+
+- Bye.
+=> END

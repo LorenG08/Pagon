@@ -1,0 +1,16 @@
+~ first
+if not Global.has_met_sign
+	set Global.has_met_sign = true
+	???: Its better to look around.... in unknown places that is
+	???: you can interact things just press "E"
+	- where am I?
+		???: ...
+	- bye 
+else
+	???: did you already look around?
+	if Global.side_verifier == true
+		???: How was the place??
+		???: you can go now
+		- go to next level
+			set Global.next_level = true
+=> END

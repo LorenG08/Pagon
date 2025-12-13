@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://delfuni70sy2r"
+path="res://.godot/imported/prank.dialogue-f88041efd1169fe6ab00dabc20bf2220.tres"
+
+[deps]
+
+source_file="res://dialogues/prank.dialogue"
+dest_files=["res://.godot/imported/prank.dialogue-f88041efd1169fe6ab00dabc20bf2220.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,34 @@
+~ start
+Barangay Captain: Thank you for helping us
+if Global.merit_verifier
+	Baranggay Captain: You from capital right?
+	Baranggay Captain: I actually talked to my people
+	Baranggay Captain: specially James and john 
+	Baranggay Captain: that you're quite helpful
+	Baranggay Captain: you will make a fine leader in this town
+	Baranggay Captain: you see my term is almost at the end
+	Baranggay Captain: we dont have any people who is willing to take my position
+	Baranggay Captain: so Im hoping you can lead this town
+	- Accept the offer
+		Baranggay Captain: Good, I can finally rest 
+		Baranggay Captain: knowing you would lead this town after me
+		set Global.become_captain = true
+	- deny the offer
+		I see, perhaps you aim at higher place, but thank you nonetheless
+		=>< snippet
+=> END
+
+
+~ snippet
+???: you finished the level 2 
+???: you either want to stay or go to next level
+???: why want to stay you may asked?
+???: well uhh........ EASTER EGGS!!!!!!
+- go to next level
+	:(
+	set Global.next_level = true
+- stay 
+	???: see who dont wants to discover easter egg!!!
+	you can just pressed the space key to proceed a level!!
+=> END
+=> END

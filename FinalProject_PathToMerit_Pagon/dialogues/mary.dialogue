@@ -1,0 +1,27 @@
+~ start
+if not Global.donation_done
+	if not Global.has_met_john
+		% Mary: Im here looking out for the water level
+		% Mary: the storm yesterday was devastating
+		% Mary: I just hope my father was safe
+	else
+		Mary: So, my father needed an axe?
+		Mary: ok! deliver this for me 
+		Mary: as im doing my duty as costguard
+		set Global.has_met_mary = true
+		set Global.has_axe = true
+else
+	if not Global.captain_offer
+		if Global.good
+			Mary: hey, uhmm you see I was the only costal guard in this small rural area
+			Mary: And I can see that you have a knack for helping others
+			Mary: maybe consider joining me?
+			- sure 
+				Mary: cool so we're both at the same boat now
+				set Global.become_coustgaurd = true
+			- no
+			Mary: I see...
+		else
+			Mary: I can see that you are determined to help others
+			but you are still lacking 
+=> END

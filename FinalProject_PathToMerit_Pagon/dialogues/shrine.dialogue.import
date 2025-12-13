@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cp0u4tw1xm4ch"
+path="res://.godot/imported/shrine.dialogue-d3b0d2a84807e602af8117f3832603b9.tres"
+
+[deps]
+
+source_file="res://dialogues/shrine.dialogue"
+dest_files=["res://.godot/imported/shrine.dialogue-d3b0d2a84807e602af8117f3832603b9.tres"]
+
+[params]
+
+defaults=true

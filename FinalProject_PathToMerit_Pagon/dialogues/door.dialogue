@@ -1,0 +1,14 @@
+~ start
+???: are you sure you want to steal from this home?
+- (steal)
+	%70
+		???: ...
+		set Global.steal = true
+		???: You have succestfully stole something from this house
+	%30
+		???: ...
+		set Global.karma_trigger = true
+		???: you have been caught!!
+		???: you recieved karma
+- (no)
+=> END

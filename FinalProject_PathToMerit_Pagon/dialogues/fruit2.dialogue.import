@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://7whc4rujho7y"
+path="res://.godot/imported/fruit2.dialogue-3fdb84b18754d421dbdc53e96e013e84.tres"
+
+[deps]
+
+source_file="res://dialogues/fruit2.dialogue"
+dest_files=["res://.godot/imported/fruit2.dialogue-3fdb84b18754d421dbdc53e96e013e84.tres"]
+
+[params]
+
+defaults=true

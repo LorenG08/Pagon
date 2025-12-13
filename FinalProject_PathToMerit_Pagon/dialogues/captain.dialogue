@@ -1,0 +1,46 @@
+~ start
+if not Global.is_captain_angry
+	Baranggay Captain: Hi you're a new face, perhaps your here to visit?
+	Baranggay Captain: we cannot accomodate you yet 
+	Baranggay Captain: our town is in shambles from the previous storm
+	Baranggay Captain: my people is in state of uneasiness
+	Baranggay Captain: because of the higher ups are not helping us
+	- I have some donations 
+		if Global.donation_verifier
+			Baranggay Captain: I see, this came from the north village
+			Baranggay Captain: Thank you for helping us!!!
+			set Global.donation_done = true
+			set Global.donated = true
+			- youre welcome
+		else
+			Baranggay Captain: its not funny to joke around young man
+			Baranggay Captain: I could let it slide this time 
+			Baranggay Captain: so be careful with your words
+			???: you have gone too far with your jokes
+			???: the baranggay captain bares a hostality towards you
+			???: you have obtained karma
+			set Global.is_captain_angry = true
+			=> END
+	- can i help with anything?
+		Baranggay Captain: just assit everyone you see struggling, they're my people => END
+	- thats unfortunate
+		Baranggay Captain: Indeed!!
+
+if Global.donated
+	Baranggay Captain: Thank you for helping us!!
+
+
+if Global.is_captain_angry 
+	Baranggay Captain: I have no time to waste just to entartain you!
+	- Im sorry for my joke 
+		Baranggay Captain: ... => END
+	- I have the donations
+		if Global.donation_verifier
+			Baranggay Captain: I see, this came from the north village
+			Baranggay Captain: Thank you for helping us!!!
+			set Global.donation_done = true
+			- youre welcome
+
+
+=> END
+

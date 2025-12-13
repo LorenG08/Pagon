@@ -1,0 +1,16 @@
+~ start
+if Global.has_goods
+	Leader: Thank you for you help
+	Leader: I know that you wanna get out of this small town
+	Leader: So before you leave 
+	Leader: pay respect to the shrine on the mountains
+	Leader: it should be a huge stone if I remember it correctly
+else
+	Leader: HI Im the captain of this town
+	Leader: currently we are in dire situation
+	Leader: there are supposed to be donations coming today
+	Leader: but they are pretty much late 
+	Leader: Im currently waiting for them
+	Leader: but Im afraid they might be lost
+	Leader: can you look for them?
+=> END

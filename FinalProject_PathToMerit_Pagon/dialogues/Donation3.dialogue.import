@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b4maogrdqlw3x"
+path="res://.godot/imported/Donation3.dialogue-493f180c355475b9d580b36a2844d560.tres"
+
+[deps]
+
+source_file="res://dialogues/Donation3.dialogue"
+dest_files=["res://.godot/imported/Donation3.dialogue-493f180c355475b9d580b36a2844d560.tres"]
+
+[params]
+
+defaults=true

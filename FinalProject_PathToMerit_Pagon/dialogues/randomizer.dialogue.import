@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bcy450ma17ov6"
+path="res://.godot/imported/randomizer.dialogue-8eac1169cb2568015dcf6009ab510b6f.tres"
+
+[deps]
+
+source_file="res://dialogues/randomizer.dialogue"
+dest_files=["res://.godot/imported/randomizer.dialogue-8eac1169cb2568015dcf6009ab510b6f.tres"]
+
+[params]
+
+defaults=true

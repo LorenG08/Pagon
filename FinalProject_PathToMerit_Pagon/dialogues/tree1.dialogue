@@ -1,0 +1,15 @@
+~ start
+???: this tree can be cut down
+if not Global.has_axe:
+	???: but unfortunately you need an axe => END
+
+if Global.has_axe:
+	???: do you want to cut this tree down?
+	- yes
+		???: you obtained wood!!
+		set Global.cut1_tree = true
+		set Global.cut1_counter = true
+		=> END
+	
+	- no
+=> END

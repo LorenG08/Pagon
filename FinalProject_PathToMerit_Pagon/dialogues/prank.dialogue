@@ -1,0 +1,21 @@
+~ start
+ Dev: So how was it!!!
+- let me get out of here
+	Dev: alright
+	Dev: but before I let you go
+	Dev: see those stats at the upper left of the screen?
+	Dev: those going to be the deciding factors
+	Dev: of the story you make
+	Dev: so kept it in mind
+	Dev: every actions has consiquences
+	set Global.next_level = true
+- terrible
+	Dev: alright on to the next level
+	Dev: but before I let you go
+	Dev: see those stats at the upper left of the screen?
+	Dev: those going to be the deciding factors
+	Dev: of the story you make
+	Dev: so kept it in mind
+	Dev: every actions has consiquences
+	set Global.next_level = true
+=> END

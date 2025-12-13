@@ -1,0 +1,12 @@
+~ start
+Resident: HI, welcome to our town
+Resident: though our town is a lil bit in shambles
+Resident: Just feel like at home
+- Can I be of help?
+	Resident: I heard that the village in the south has taken a huge damage
+	Resident: perhaps if you talk to other residents in this town
+	Resident: they maybe willing to help
+
+- thank you
+	Resident: You are welcome!!
+=> END

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn6l8wapiu31f"]
+
+[ext_resource type="AudioStream" uid="uid://bkkx332h0h26x" path="res://music/Free Fall.mp3" id="1_luf1b"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_luf1b")
+autoplay = true
+bus = &"music"

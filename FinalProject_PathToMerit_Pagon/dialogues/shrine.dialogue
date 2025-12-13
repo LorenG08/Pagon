@@ -1,0 +1,10 @@
+~ start
+if Global.has_goods 
+	???: you have found the shrine
+	- pay respect
+		???: you have paid your respect to the shrine 
+		???: you can now go to the next level
+		- got to next level
+			set Global.next_level = true
+			- stay 
+=> END

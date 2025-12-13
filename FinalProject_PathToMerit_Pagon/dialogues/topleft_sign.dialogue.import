@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://broik0fk46xog"
+path="res://.godot/imported/topleft_sign.dialogue-bbd955689c0f592935a00555e48b59bc.tres"
+
+[deps]
+
+source_file="res://dialogues/topleft_sign.dialogue"
+dest_files=["res://.godot/imported/topleft_sign.dialogue-bbd955689c0f592935a00555e48b59bc.tres"]
+
+[params]
+
+defaults=true

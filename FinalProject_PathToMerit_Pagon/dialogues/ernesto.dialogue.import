@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cidk1mytbnd02"
+path="res://.godot/imported/ernesto.dialogue-de113218e148301fee7cab969e8d44b8.tres"
+
+[deps]
+
+source_file="res://dialogues/ernesto.dialogue"
+dest_files=["res://.godot/imported/ernesto.dialogue-de113218e148301fee7cab969e8d44b8.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://doltla22vml4y"
+path="res://.godot/imported/mary.dialogue-2b8f057050778a29d03cbfebc1b02cb2.tres"
+
+[deps]
+
+source_file="res://dialogues/mary.dialogue"
+dest_files=["res://.godot/imported/mary.dialogue-2b8f057050778a29d03cbfebc1b02cb2.tres"]
+
+[params]
+
+defaults=true

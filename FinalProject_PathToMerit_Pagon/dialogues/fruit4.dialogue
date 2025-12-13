@@ -1,0 +1,12 @@
+~ start
+???: this tree has fruits
+???: do you want to pick the fruits?
+- Yes
+	???: you obtained fruits 
+	set Global.picked_fruit4 = true
+	set Global.fruit4_holder = true
+	=> END
+
+- no
+
+=> END

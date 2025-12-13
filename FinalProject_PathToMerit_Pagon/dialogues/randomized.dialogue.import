@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cvf4mq7q50alp"
+path="res://.godot/imported/randomized.dialogue-676fee1d6c76f4791e867bb34b2e45aa.tres"
+
+[deps]
+
+source_file="res://dialogues/randomized.dialogue"
+dest_files=["res://.godot/imported/randomized.dialogue-676fee1d6c76f4791e867bb34b2e45aa.tres"]
+
+[params]
+
+defaults=true

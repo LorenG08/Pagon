@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://1t41i5v056r3"
+path="res://.godot/imported/women.dialogue-c15c6531be9f1d46a3d63808ff364605.tres"
+
+[deps]
+
+source_file="res://dialogues/women.dialogue"
+dest_files=["res://.godot/imported/women.dialogue-c15c6531be9f1d46a3d63808ff364605.tres"]
+
+[params]
+
+defaults=true

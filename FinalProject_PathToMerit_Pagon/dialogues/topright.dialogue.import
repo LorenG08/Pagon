@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://csowjp1odvu2v"
+path="res://.godot/imported/topright.dialogue-9a6d0ed63e7de8d93f331b4687aae80a.tres"
+
+[deps]
+
+source_file="res://dialogues/topright.dialogue"
+dest_files=["res://.godot/imported/topright.dialogue-9a6d0ed63e7de8d93f331b4687aae80a.tres"]
+
+[params]
+
+defaults=true

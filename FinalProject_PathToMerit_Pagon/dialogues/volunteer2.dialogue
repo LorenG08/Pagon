@@ -1,0 +1,15 @@
+~ start
+if Global.volunteer1
+	volunteer: Im scareeeeeeddd!!!!
+	volunteer: AHhhhhhhhhhhhhh
+	volunterr: you scared me
+	- get the goods
+		volunteer: I see so its better for us to go 
+		volunteer: and trust the goods to you
+		volunteer: alright Ill entrust this to you 
+		???: you recieved the goods
+		set Global.volunteer2 = true
+		
+else
+	???: Im lost
+=> END

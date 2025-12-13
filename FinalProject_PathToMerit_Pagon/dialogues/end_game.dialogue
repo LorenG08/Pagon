@@ -1,0 +1,52 @@
+~ start
+???: You have reached the top 
+???: you being one... gets to decide the flow of life
+???: of those beneath you 
+???: will you choose to be a benevolent leader
+???: or be an Iron hand dectator
+???: the choice is yours to make
+???: as the one who reached the summit 
+???: what fate will thread 
+- become a good leader
+	if Global.good 
+		???: Your wish have come true
+		???: the people have admired you 
+		???: your country have prospered
+		???: you have nothing to worry 
+		???: as the corrupt on your side has been cleansed by you
+		=>< snippet
+	else
+		???: Your karma is greater than your merit
+		???: perhaps you have been stealing from your people?
+		???: even before you have the power 
+		???: as a result for your actions
+		???: the power you have once held for a short amount of time
+		???: has been taken from you
+		=>< snippet
+
+- plunder all
+	if Global.plunderer
+		???: You have a talent for plundering
+		???: The people you've govern didnt notice a thing
+		???: and you dont have a plan to stop soon
+		???: until you have taken all
+		???: but what went wrong 
+		???: for you to end up like this
+		???: where did it began?
+		=>< snippet
+	else
+		???: You have been caught stealing the money of the people
+		???: all you've been working so hard
+		???: has become meaningless
+		???: but what went wrong 
+		???: for you to end up like this
+		???: where did it began?
+		=>< snippet
+=> END
+
+
+~ snippet 
+???: ....
+???: you have finished the game
+set Global.game_done = true
+=> END

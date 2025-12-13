@@ -1,0 +1,5 @@
+~ start
+???: You got the orange flower!!!
+if not Global.has_orange_flower
+	set Global.has_orange_flower = true
+=> END

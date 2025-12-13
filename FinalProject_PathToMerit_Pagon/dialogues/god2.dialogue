@@ -1,0 +1,11 @@
+~ start
+???: Hey there!! you shouldn't be here 
+???: this area is restricted 
+???: here lies the diety of this land 
+
+- Im here to offer something 
+	???: I see 
+	set Global.has_met_guard = true
+- Leave
+
+=> END

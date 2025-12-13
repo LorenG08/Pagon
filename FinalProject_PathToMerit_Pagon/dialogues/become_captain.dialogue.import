@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://7cmvsmg8x8v8"
+path="res://.godot/imported/become_captain.dialogue-90688a79372a9b3a0b9a75ecd629d9ac.tres"
+
+[deps]
+
+source_file="res://dialogues/become_captain.dialogue"
+dest_files=["res://.godot/imported/become_captain.dialogue-90688a79372a9b3a0b9a75ecd629d9ac.tres"]
+
+[params]
+
+defaults=true

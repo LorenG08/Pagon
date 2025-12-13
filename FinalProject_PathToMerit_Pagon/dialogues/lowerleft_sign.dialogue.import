@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://kgpmiw78jtnk"
+path="res://.godot/imported/lowerleft_sign.dialogue-59e788040d08a815de9a0575a2932d10.tres"
+
+[deps]
+
+source_file="res://dialogues/lowerleft_sign.dialogue"
+dest_files=["res://.godot/imported/lowerleft_sign.dialogue-59e788040d08a815de9a0575a2932d10.tres"]
+
+[params]
+
+defaults=true

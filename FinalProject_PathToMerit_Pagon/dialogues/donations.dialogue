@@ -1,0 +1,13 @@
+~ start
+Donator: hey I heard the the south village is in bad shape
+Donator: I was hoping to donate to them 
+Donator: But as you have guessed 
+Donator: my situatioin wont let me
+Donator: wont you this troubled lamb?
+- sure 
+	Donator: cool, Just deliver this for me 
+	???: you recieved the donations 
+
+- NO
+	Donator: thats to bad
+=> END
