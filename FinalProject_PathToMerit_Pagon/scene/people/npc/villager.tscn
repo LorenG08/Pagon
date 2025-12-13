@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxow16rttfp71"]
+
+[ext_resource type="Texture2D" uid="uid://bww0ki1gtogln" path="res://scene/people/npc/women.png" id="1_i1tqb"]
+[ext_resource type="Script" uid="uid://ctcpykafgacyb" path="res://script/npc.tres.gd" id="2_eh8el"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eh8el"]
+radius = 18.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ikijl"]
+radius = 24.0
+
+[node name="women2" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_i1tqb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_eh8el")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_eh8el")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 1)
+shape = SubResource("CircleShape2D_ikijl")

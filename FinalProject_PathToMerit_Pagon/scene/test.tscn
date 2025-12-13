@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvmd5bunnhamw"]
+
+[ext_resource type="PackedScene" uid="uid://dp07sl4gefcbx" path="res://scene/people/players/player.tscn" id="2_5u11y"]
+[ext_resource type="PackedScene" uid="uid://c3abxvpn8n8ug" path="res://scene/people/players/monster.tscn" id="2_bp0px"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("2_5u11y")]
+position = Vector2(600, 141)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-2, 2)
+
+[node name="monster" parent="." instance=ExtResource("2_bp0px")]
+position = Vector2(133, 222)

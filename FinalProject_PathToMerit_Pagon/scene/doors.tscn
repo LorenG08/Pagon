@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://bndo8ax3q6ef5"]
+
+[sub_resource type="GDScript" id="GDScript_u3g03"]
+resource_name = "doors"
+script/source = "extends Area2D
+@onready var interact_label: Label = %interact_label
+@export var dialogue_path: String =\"res://dialogues/door.dialogue\"
+
+var player_in_area = false
+
+func _ready():
+	connect(\"body_entered\", Callable(self, \"_on_body_entered\"))
+	connect(\"body_exited\", Callable(self, \"_on_body_exited\"))
+	interact_label.visible = false
+
+
+func _on_body_entered(body):
+	if body.name == \"player\":
+		player_in_area = true
+		interact_label.visible = true
+
+func _on_body_exited(body):
+	if body.name == \"player\":
+		player_in_area = false
+		interact_label.visible = false
+
+
+func _process(delta):
+	if player_in_area and Input.is_action_just_pressed(\"interact\"):
+		Global.area_entered = true
+		DialogueManager.show_dialogue_balloon(load(dialogue_path))
+		queue_free()
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u3g03"]
+radius = 33.37664
+
+[node name="doors" type="Area2D"]
+script = SubResource("GDScript_u3g03")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2)
+shape = SubResource("CircleShape2D_u3g03")
+
+[node name="interact_label" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+anchors_preset = -1
+anchor_left = 0.303
+anchor_top = 0.22600001
+anchor_right = 0.303
+anchor_bottom = 0.22600001
+offset_left = -76.056
+offset_top = -56.448013
+offset_right = 77.944
+offset_bottom = -33.448013
+grow_horizontal = 2
+text = "press \"E\" to interact"

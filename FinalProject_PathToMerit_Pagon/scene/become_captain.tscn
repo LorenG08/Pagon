@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsniyrfrol41g"]
+
+[sub_resource type="GDScript" id="GDScript_fktej"]
+resource_name = "end_game"
+script/source = "extends Node2D
+
+func _ready() -> void:
+	DialogueManager.show_dialogue_balloon(load(\"res://dialogues/become_captain.dialogue\"))
+
+func _process(delta: float) -> void:
+	if Global.done == true:
+		get_tree().change_scene_to_file(\"res://scene/main_menu/main_menu.tscn\")
+"
+
+[node name="become_captain" type="Node2D"]
+script = SubResource("GDScript_fktej")

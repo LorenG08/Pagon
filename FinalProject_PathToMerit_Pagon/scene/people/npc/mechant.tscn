@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgpps3ovqd0av"]
+
+[ext_resource type="Texture2D" uid="uid://2jopp2gy6v5b" path="res://scene/people/npc/oldman.png" id="1_2ku3h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8e3n8"]
+radius = 13.038404
+
+[node name="merchant" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2ku3h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("CircleShape2D_8e3n8")

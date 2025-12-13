@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3abxvpn8n8ug"]
+
+[ext_resource type="Texture2D" uid="uid://dvpm7w6vpbvui" path="res://ASSESTS/character/player2.png" id="1_xshdo"]
+
+[sub_resource type="GDScript" id="GDScript_xshdo"]
+resource_name = "monster"
+script/source = "extends CharacterBody2D
+
+@export var speed: float = 50
+var is_following_player: bool = false
+var player: CharacterBody2D = null
+
+func _physics_process(delta):
+	if is_following_player and player:
+		var direction = (player.global_position - global_position).normalized()
+		velocity = direction * speed
+	else:
+		velocity = Vector2.ZERO
+	
+	move_and_slide()
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"player\"): # safer detection
+		player = body
+		is_following_player = true
+		print(body.name)
+		print(\"Player detected! Enemy will follow.\")
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if body == player:
+		is_following_player = false
+		player = null
+		print(\"Player left detection area.\")
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rnog4"]
+radius = 15.033297
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wjvvu"]
+radius = 138.00362
+
+[node name="monster" type="CharacterBody2D"]
+script = SubResource("GDScript_xshdo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_rnog4")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_wjvvu")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(2, 3)
+texture = ExtResource("1_xshdo")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

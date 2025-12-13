@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://co3wbrrqbvj6g"]
+
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="1_hwhcc"]
+[ext_resource type="Texture2D" uid="uid://bmojks4no0f6r" path="res://hand.svg" id="2_c64ut"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("1_hwhcc")]
+offset_left = 2.0
+offset_top = -303.0
+offset_right = 302.0
+offset_bottom = -3.0
+pressed_color = Color(0.5683208, 0, 0.113428794, 1)
+action_left = "left"
+action_right = "right"
+action_up = "up"
+action_down = "down"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(1005, 447)
+scale = Vector2(0.19726563, 0.1875)
+texture_normal = ExtResource("2_c64ut")
+texture_pressed = ExtResource("2_c64ut")
+passby_press = true
+action = "interact"
+visibility_mode = 1

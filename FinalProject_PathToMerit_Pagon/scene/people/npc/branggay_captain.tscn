@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8g6j6d1at21q"]
+
+[ext_resource type="Texture2D" uid="uid://d2vmmlo5ng1t" path="res://scene/people/npc/politicianpng.png" id="1_2uy1j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eh8el"]
+radius = 18.0
+
+[sub_resource type="GDScript" id="GDScript_qvkj3"]
+resource_name = "captain"
+script/source = "extends Area2D
+
+@export var dialogue_path: String = \"res://dialogues/captain.dialogue\"
+
+var player_in_area = false
+
+func _ready():
+	connect(\"body_entered\", Callable(self, \"_on_body_entered\"))
+	connect(\"body_exited\", Callable(self, \"_on_body_exited\"))
+	
+
+
+func _on_body_entered(body):
+	if body.name == \"player\":
+		player_in_area = true
+
+func _on_body_exited(body):
+	if body.name == \"player\":
+		player_in_area = false
+
+
+func _process(delta):
+	if player_in_area and Input.is_action_just_pressed(\"interact\"):
+		if Global.donated == true:
+				DialogueManager.show_dialogue_balloon(load(\"res://dialogues/captain.dialogue\"))
+		else:
+			Global.area_entered = true
+			DialogueManager.show_dialogue_balloon(load(dialogue_path))
+		
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ikijl"]
+radius = 33.0
+
+[node name="branggay_captain" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+texture = ExtResource("1_2uy1j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_eh8el")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = SubResource("GDScript_qvkj3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_ikijl")
